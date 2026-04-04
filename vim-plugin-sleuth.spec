@@ -3,7 +3,7 @@
 Summary:	Vim plugin: Heuristically set buffer options
 Name:		vim-plugin-%{plugin}
 Version:	0.20171028.1
-Release:	1
+Release:	2
 License:	Vim
 Group:		Applications/Editors/Vim
 Source0:	https://github.com/tpope/vim-sleuth/archive/%{commit}.zip
