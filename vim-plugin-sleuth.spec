@@ -1,13 +1,12 @@
-%define		commit	d56a4302358359ddf9845252addf637a5e6bd6d5
 %define		plugin	sleuth
 Summary:	Vim plugin: Heuristically set buffer options
 Name:		vim-plugin-%{plugin}
-Version:	0.20171028.1
-Release:	2
+Version:	2.0
+Release:	1
 License:	Vim
 Group:		Applications/Editors/Vim
-Source0:	https://github.com/tpope/vim-sleuth/archive/%{commit}.zip
-# Source0-md5:	aaf96c48053eb67cd80977b84eac06c5
+Source0:	https://github.com/tpope/vim-sleuth/archive/refs/tags/v%{version}.tar.gz
+# Source0-md5:	86713b18136eececf05fb3478fb113a7
 URL:		https://github.com/tpope/vim-sleuth
 # for _vimdatadir
 Requires:	vim-rt >= 4:7.2.170
@@ -24,7 +23,7 @@ files of the same type in the current and parent directories. In lieu
 of adjusting 'softtabstop', 'smarttab' is enabled.
 
 %prep
-%setup -q -n vim-sleuth-%{commit}
+%setup -q -n vim-sleuth-%{version}
 
 %install
 rm -rf $RPM_BUILD_ROOT
